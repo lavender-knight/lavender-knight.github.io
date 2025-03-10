@@ -1,0 +1,299 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title> VGAD - Video Game Art Direction</title>
+	
+	<!--font import-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Space+Grotesk:wght@300..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+	
+	<!-- style sheet -->
+	
+	<style>
+	
+		/* css reset */
+		
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			v2.0 | 20110126
+			License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+		/* font/s */
+		
+		.space-grotesk-<uniquifier> {
+		  font-family: "Space Grotesk", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;
+		}
+		
+		.tilt-neon-<uniquifier> {
+		  font-family: "Tilt Neon", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		  font-variation-settings:
+			"XROT" 0,
+			"YROT" 0;
+		}
+		.prosto-one-regular {
+		  font-family: "Prosto One", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		
+		/* actual style sheet */
+		
+		
+		p{
+			font-size: 20px;
+			font-family: Tilt Neon;
+			margin: 3% 3%;
+			color: #f6f3f6;
+			line-height: 140%;
+		}
+		h1{
+			color: #ffffff;
+			font-family: Prosto One;
+			font-size: 50px;
+		}
+		header{
+			background-color: #3A6197;
+			padding: 2%;
+		}
+		h2{
+			margin: 2%;
+			font-size: 30px;
+			font-family: Space Grotesk;
+			font-weight: 600;
+			color: #1C3557;
+		}
+		body{
+			background-color: #13112D;
+		}
+		#main-content{
+			width: 36%;
+			float: left;
+			padding: 2%;
+			background-color: #9093AA;
+			box-sizing: border-box;
+			margin: 2% 0 0 2%;
+		}
+
+		#wrapper{
+			width: 85%;
+			margin: 0 auto;
+			background-color: #B3B5C4;
+			overflow: hidden; 
+		}
+
+		#sidebar{
+			width: 58%;
+			float: left;
+			padding: 2%;
+			background-color: #9093AA;
+			box-sizing: border-box;
+			margin: 2% 2% 0 2%;
+			margin-top: 2%;
+		}
+		footer{
+			clear: left;
+		}	
+		blockquote:before{
+			vertical-align: -.35em;
+			line-height: .1em;
+			font-size: 4em;
+			content: "\201C";
+			}
+		blockquote{
+			background-color: darkgrey;
+			padding: 2%;
+			border-left: 10px solid black;
+			color: #eee;
+			font-size: 1.5em;
+			font-family: serif;
+			line-height: 1.5em;
+			margin: 4% 0 4% 6%;
+		}
+		.main-figure {
+		   width: 40%;
+		   float: left;
+		   border-left: 10px solid #3a9781;
+		   
+		}
+		.figure-2 {
+		   width: 50%;
+		   float: left;
+		   border-left: 10px solid #3a9781;
+		}
+		footer{
+			text-color: #f6f3f6;
+			font-family: Tilt Neon;
+			padding: .25%;
+			background-color: #3A6197;
+		}
+		a{
+			font-family: Tilt Neon;
+			color: #B3B5C4;
+		}
+		nav{
+			width:  100%;
+			background-color: #1C3557;
+			display: inline-block;
+			align-items: center;
+			overflow: hidden;
+			padding-left: px;
+			
+		}
+		.nav-item{
+			display: inline-block;
+			align-items:center;
+			justify-content: center;
+			font-size: 25px;
+			font-family: Space Grotesk;
+			font-weight: 600;
+			height:100%;
+			margin: -.35%;
+			padding: 15px;
+			background-color: #1C3557;
+		}
+					
+		/* nav item style */
+		
+		li.nav-item a:link{
+			text-decoration: none;
+			color: #3a9781;
+		}
+		li.nav-item a:visited{
+			color: #3a9781;
+			text-decoration: none;
+		}
+		li.nav-item a:hover{
+			color: #f6f3f6;
+			text-decoration: none;
+			background-color:#3A6197;
+		}
+		li.nav-item a:active{
+			color: #3a9781;
+			text-decoration: none;
+		}
+	</style>
+	
+	<body>
+	
+		<div id="wrapper">
+			<header> <h1>VGAD - Video Game Art Direction</h1></header>
+			
+			<nav>
+				<ul>
+					<li class="nav-item"><a href="index.html"> Home</a></li>
+					<li class="nav-item"><a href="History - 5pagefinal.html"> History</a></li>
+					<li class="nav-item"><a href="FromSoftware - 5pagefinal.html"> FromSoftware</a></li>
+					<li class="nav-item"><a href="Indies - 5pagefinal.html"> Indies</a></li>
+				</ul>
+			</nav>
+
+			<div id="main-content">
+				
+				<article> 
+					<h2>Nintendo EPD </h2>
+					<p>
+							&nbsp&nbsp&nbsp&nbsp Nintendo Entertainment Planning & Development Division is the largest department at Nintendo. It oversees the development of several games and
+							as an artist, I see such beautiful artistry & attention to details coming from this division. Unlike GameFreak (another division of Nintendo), EPD's games actually function 
+							on Nintendos scrappy console. (I have a lot of negative feelings about the Switch that don't need to go here)
+					</p>
+				</article>
+				
+				<article> 
+					<h2>The Legend of Zelda</h2>
+					<p>
+						&nbsp&nbsp&nbsp&nbsp Zelda has been such an influential series in gaming overall with almost every title being on the Artistically Influential Games by Year chart (see <a href="History - 5pagefinal.html">history</a>)
+						The two titles that stand out to me the most (probably because I've been in the gaming 'scene' at the time of their release) are Breath of The Wild & Tears of The Kingdom. They are visually unique
+						from most modern games that try to go for a realistic style. Taking on a more anime/cartoony style which, to my knowledge, hadn't been done as well as BOTW's 2017 release.  Their lighting engine
+						works extremely well for making the characters look like they're in a cell-shaded style, rather than realistic lighting which can make the models feel flat and unfinished. Not only graphically 
+						but this game (BOTW & TOTK) is artistically very beautiful taking place in an open world where you can just go explore and you want to explore because it's just beautiful.
+					</p>
+				</article>
+				<article>
+					<h2>Animal Crossing</h2>
+					<p>
+						&nbsp&nbsp&nbsp&nbsp Though Animal Crossing:New Horizons isn't technically that impressive it does have a lot of interesting things going on artistically that I think is part of the reason it blew up so much in popularity
+						during the 2020 COVID-19 lockdown. The designs of all the villagers & objects that you can place are intentionally made to be very cutesy and rounded to fit with the style of the game. There's also
+						some interesting things that the developers did with the camera in New Horizons. You can learn more about this in Shesez's <a href="https://www.youtube.com/watch?v=zjFyTq25QBs"> boundary break video </a>.
+					</p>
+				</article>
+			
+			</div>
+			<div id="sidebar">
+				<article> 
+					<h2>Screenshots</h2>
+					<figure>
+						<img src="botw2.png" width="100%">
+						<figcaption><p>The Legend of Zelda: Breath of The Wild</p></figcaption>
+					</figure>
+					<figure>
+						<img src="totk.png" width="100%">
+						<figcaption><p>The Legend of Zelda: Tears of the Kingdom</p></figcaption>
+					</figure>
+					<figure>
+						<img src="acnh.jpg" width="100%">
+						<figcaption><p>Animal Crossing: New Horizons</p></figcaption>
+					</figure>
+				</article>
+			</div>
+			<footer>
+				<p>Copyright &copy; Autumn Thompson 2025</p>
+			</footer>
+			
+		</div>
+	</body>
+</html>

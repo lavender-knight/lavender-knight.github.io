@@ -1,0 +1,307 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title> VGAD - Video Game Art Direction</title>
+	
+	<!--font import-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Space+Grotesk:wght@300..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+	
+	<!-- style sheet -->
+	
+	<style>
+	
+		/* css reset */
+		
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			v2.0 | 20110126
+			License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+		/* font/s */
+		
+		.space-grotesk-<uniquifier> {
+		  font-family: "Space Grotesk", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;
+		}
+		
+		.tilt-neon-<uniquifier> {
+		  font-family: "Tilt Neon", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		  font-variation-settings:
+			"XROT" 0,
+			"YROT" 0;
+		}
+		.prosto-one-regular {
+		  font-family: "Prosto One", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		
+		/* actual style sheet */
+		
+		
+		p{
+			font-size: 20px;
+			font-family: Tilt Neon;
+			margin: 3% 3%;
+			color: #f6f3f6;
+			line-height: 140%;
+		}
+		h1{
+			color: #ffffff;
+			font-family: Prosto One;
+			font-size: 50px;
+		}
+		header{
+			background-color: #3A6197;
+			padding: 2%;
+		}
+		h2{
+			margin: 2%;
+			font-size: 30px;
+			font-family: Space Grotesk;
+			font-weight: 600;
+			color: #1C3557;
+		}
+		body{
+			background-color: #13112D;
+		}
+		#main-content{
+			width: 36%;
+			float: left;
+			padding: 2%;
+			background-color: #9093AA;
+			box-sizing: border-box;
+			margin: 2% 0 0 2%;
+		}
+
+		#wrapper{
+			width: 85%;
+			margin: 0 auto;
+			background-color: #B3B5C4;
+			overflow: hidden; 
+		}
+
+		#sidebar{
+			width: 58%;
+			float: left;
+			padding: 2%;
+			background-color: #9093AA;
+			box-sizing: border-box;
+			margin: 2% 2% 0 2%;
+			margin-top: 2%;
+		}
+		footer{
+			clear: left;
+		}	
+		blockquote:before{
+			vertical-align: -.35em;
+			line-height: .1em;
+			font-size: 4em;
+			content: "\201C";
+			}
+		blockquote{
+			background-color: darkgrey;
+			padding: 2%;
+			border-left: 10px solid black;
+			color: #eee;
+			font-size: 1.5em;
+			font-family: serif;
+			line-height: 1.5em;
+			margin: 4% 0 4% 6%;
+		}
+		.main-figure {
+		   width: 40%;
+		   float: left;
+		   border-left: 10px solid #3a9781;
+		   
+		}
+		.figure-2 {
+		   width: 50%;
+		   float: left;
+		   border-left: 10px solid #3a9781;
+		}
+		footer{
+			text-color: #f6f3f6;
+			font-family: Tilt Neon;
+			padding: .25%;
+			background-color: #3A6197;
+		}
+		a{
+			font-family: Tilt Neon;
+			color: #B3B5C4;
+		}
+		nav{
+			width:  100%;
+			background-color: #1C3557;
+			display: inline-block;
+			align-items: center;
+			overflow: hidden;
+			padding-left: px;
+			
+		}
+		.nav-item{
+			display: inline-block;
+			align-items:center;
+			justify-content: center;
+			font-size: 25px;
+			font-family: Space Grotesk;
+			font-weight: 600;
+			height:100%;
+			margin: -.35%;
+			padding: 15px;
+			background-color: #1C3557;
+		}
+					
+		/* nav item style */
+		
+		li.nav-item a:link{
+			text-decoration: none;
+			color: #3a9781;
+		}
+		li.nav-item a:visited{
+			color: #3a9781;
+			text-decoration: none;
+		}
+		li.nav-item a:hover{
+			color: #f6f3f6;
+			text-decoration: none;
+			background-color:#3A6197;
+		}
+		li.nav-item a:active{
+			color: #3a9781;
+			text-decoration: none;
+		}
+	</style>
+	
+	<body>
+	
+		<div id="wrapper">
+			<header> <h1>VGAD - Video Game Art Direction</h1></header>
+			
+			<nav>
+				<ul>
+					<li class="nav-item"><a href="index.html"> Home</a></li>
+					<li class="nav-item"><a href="History - 5pagefinal.html"> History</a></li>
+					<li class="nav-item"><a href="Nintendo - 5pagefinal.html"> Nintendo (EDP)</a></li>
+					<li class="nav-item"><a href="Indies - 5pagefinal.html"> Indies</a></li>
+				</ul>
+			</nav>
+
+			<div id="main-content">
+				
+				<article> 
+					<h2>FromSoftware </h2>
+					<p>
+							&nbsp&nbsp&nbsp&nbsp FromSoftware is a video game development comapany founded in Japan in 1986. Though, at first they developed buisiness applications. In my opinion,
+							they had too many creative people working for them that they had to switch to a more creative medium of expression-- which they did. Their first game, King's
+							Feild was released in 1994 and was commerically successful in Japan. Though this was not what they became known for. Their game Dark Souls (released in 2011) became known 
+							for being an incredibly difficult game. Critical aclaim came in 2022 for the addition to their Dark Souls Series: Elden Ring which has a stunning open world with other-worldly 
+							landscapes. There are more titles that they have released that I don't have the space to talk about here but Sekiro: Shadows Die Twice and Armored Core 6 are worth mentioning at
+							the very least.
+					</p>
+				</article>
+				
+				<article> 
+					<h2>Dark Souls/Elden Ring</h2>
+					<p>
+						&nbsp&nbsp&nbsp&nbsp Dark Souls(2011) started a series that FromSoftware started to be known for, which was incredibly difficult games. If you peel back that single layer of it being a difficult game you 
+						can look at it and see how much artistry is really put behind it. The intention behind every path in a game can be incredibly important and not many studios pay attention to that 
+						kind of thing even FromSoftware themselves (I'm looking at you Dark Souls 2). The subtlety of music or nature noises only playing in certain areas makes the tracks feel much more important.
+					</p>
+					<p>
+						Elden Ring (2022) took the basic systems and combat of Dark Souls and improved on it 10-fold. They didn't skimp out on the complexity of the world they were building and showed so much
+						of what creative people are able to do with a game. Elden ring looks like something out of a painting and I don't mean that figurativly. The concept art for the game looks just like the game it
+						can be hard to tell the two apart at times.
+					</p>
+				</article>
+				<article>
+					<h2>Bloodborne</h2>
+					<p>
+						&nbsp&nbsp&nbsp&nbspDark Published by Sony, this game is a cult-classic for sure. It's only currently (legally) playable on the PS4/PS5 (PS4 version only) and if you don't have one you're out of luck. The story of this game
+						talks about the intricacies of birth/motherhood, albiet subtlety, and the horror of it all. It relies on the (no pun-intended) birth of horror as a genre to push it's art foreward. H.P. Lovecraft wrote 
+						plenty of stories about this 'unspeakable horror', which in turn made it more scary. Though, in my opinion, Bloodborne did it better because it was able to visualize these 'unspeakable' and 'undescriable'
+						things. Take the boss Ludwig, for example, he was a hunter of the curse and got drunk on blood and got stuck in the nightmare (I know this makes no sense if you haven't played the game) but it just goes to show 
+						how unspeakable this game really is.
+					</p>
+				</article>
+			
+			</div>
+			<div id="sidebar">
+				<article> 
+					<h2>Screenshots</h2>
+					<figure>
+						<img src="liurnia.webp" width="100%">
+						<figcaption><p>Elden Ring</p></figcaption>
+					</figure>
+					<figure>
+						<img src="bloodborne.webp" width="100%">
+						<figcaption><p>Bloodborne</p></figcaption>
+					</figure>
+					<figure>
+						<img src="sekiro.jpg" width="100%">
+						<figcaption><p>Sekiro Shadows Die Twice</p></figcaption>
+					</figure>
+				</article>
+			</div>
+			<footer>
+				<p>Copyright &copy; Autumn Thompson 2025</p>
+			</footer>
+			
+		</div>
+	</body>
+</html>

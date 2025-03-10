@@ -1,0 +1,297 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title> VGAD - Video Game Art Direction</title>
+	
+	<!--font import-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Space+Grotesk:wght@300..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+	
+	<!-- style sheet -->
+	
+	<style>
+	
+		/* css reset */
+		
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			v2.0 | 20110126
+			License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+		/* font/s */
+		
+		.space-grotesk-<uniquifier> {
+		  font-family: "Space Grotesk", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;
+		}
+		
+		.tilt-neon-<uniquifier> {
+		  font-family: "Tilt Neon", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		  font-variation-settings:
+			"XROT" 0,
+			"YROT" 0;
+		}
+		.prosto-one-regular {
+		  font-family: "Prosto One", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		
+		/* actual style sheet */
+		
+		
+		p{
+			font-size: 20px;
+			font-family: Tilt Neon;
+			margin: 3% 3%;
+			color: #f6f3f6;
+			line-height: 140%;
+		}
+		h1{
+			color: #ffffff;
+			font-family: Prosto One;
+			font-size: 50px;
+		}
+		header{
+			background-color: #3A6197;
+			padding: 2%;
+		}
+		h2{
+			margin: 2%;
+			font-size: 30px;
+			font-family: Space Grotesk;
+			font-weight: 600;
+			color: #1C3557;
+		}
+		body{
+			background-color: #13112D;
+		}
+		#main-content{
+			width: 58%;
+			float: left;
+			padding: 2%;
+			background-color: #9093AA;
+			box-sizing: border-box;
+			margin: 2% 0 0 2%;
+		}
+
+		#wrapper{
+			width: 85%;
+			margin: 0 auto;
+			background-color: #B3B5C4;
+			overflow: hidden; 
+		}
+
+		#sidebar{
+			width: 36%;
+			float: left;
+			padding: 2%;
+			background-color: #9093AA;
+			box-sizing: border-box;
+			margin: 2% 2% 0 2%;
+			margin-top: 2%;
+		}
+		footer{
+			clear: left;
+		}	
+		blockquote:before{
+			vertical-align: -.35em;
+			line-height: .1em;
+			font-size: 4em;
+			content: "\201C";
+			}
+		blockquote{
+			background-color: darkgrey;
+			padding: 2%;
+			border-left: 10px solid black;
+			color: #eee;
+			font-size: 1.5em;
+			font-family: serif;
+			line-height: 1.5em;
+			margin: 4% 0 4% 6%;
+		}
+		.main-figure {
+		   width: 40%;
+		   float: left;
+		   border-left: 10px solid #3a9781;
+		   
+		}
+		.figure-2 {
+		   width: 50%;
+		   float: left;
+		   border-left: 10px solid #3a9781;
+		}
+		footer{
+			text-color: #f6f3f6;
+			font-family: Tilt Neon;
+			padding: .25%;
+			background-color: #3A6197;
+		}
+		nav{
+			width:  100%;
+			background-color: #1C3557;
+			display: inline-block;
+			align-items: center;
+			overflow: hidden;
+			padding-left: px;
+			
+		}
+		.nav-item{
+			display: inline-block;
+			align-items:center;
+			justify-content: center;
+			font-size: 25px;
+			font-family: Space Grotesk;
+			font-weight: 600;
+			height:100%;
+			margin: -.35%;
+			padding: 15px;
+			background-color: #1C3557;
+		}
+					
+		/* nav item style */
+		
+		li.nav-item a:link{
+			text-decoration: none;
+			color: #3a9781;
+		}
+		li.nav-item a:visited{
+			color: #3a9781;
+			text-decoration: none;
+		}
+		li.nav-item a:hover{
+			color: #f6f3f6;
+			text-decoration: none;
+			background-color:#3A6197;
+		}
+		li.nav-item a:active{
+			color: #3a9781;
+			text-decoration: none;
+		}
+		
+	</style>
+	
+	<body>
+	
+		<div id="wrapper">
+			<header> <h1>VGAD - Video Game Art Direction</h1></header>
+			
+			<nav>
+				<ul>
+					<li class="nav-item"><a href="History - 5pagefinal.html"> History</a></li>
+					<li class="nav-item"><a href="Nintendo - 5pagefinal.html"> Nintendo (EPD)</a></li>
+					<li class="nav-item"><a href="FromSoftware - 5pagefinal.html"> FromSoftware</a></li>
+					<li class="nav-item"><a href="Indies - 5pagefinal.html"> Indies</a></li>
+				</ul>
+			</nav>
+
+			<div id="main-content">
+		
+				<article> 
+						<article> 
+					<h2>You've reached Video Game Art Direction </h2>
+					<p>
+							&nbsp&nbsp&nbsp&nbsp Art is everywhere from music to film to visual art all of them culminate to make the ultimite form of media: video games.
+							This is a website overlooking the best art direction in video games (in my <sub>somewhat</sub> educated opinion)! The menu at the top will take you to specific developers and the pages contain games I think really stick out from them.
+						The Indies page goes over the art direction in several games that are in the indie category.
+					</p>
+				</article>
+				
+				<article> 
+					<h2>Favorite Screenshots</h2>
+					<p>
+						<figure class="main-figure">
+							<img src="botw.png" width="100%">
+							<figcaption>
+								<p> The Legend of Zelda: Breath of the Wild</p>
+							</figcaption>
+						</figure>
+					</p>
+					<p>
+						<figure class="figure-2">
+							<img src="lyndell.jpg" width="100%">
+							<figcaption>
+								<p> Leyendell Royal Capital - Elden Ring</p>
+							</figcaption>
+						</figure>
+					</p>
+				</article>
+				</article>
+			
+			</div>
+			<div id="sidebar">
+				<article> 
+					<h2>Why Art Direction?</h2>
+					<p>
+						&nbsp&nbsp&nbsp&nbsp My interest in video games started when I was really young. Probably around the age of 5 when I was on the Wii playing Poke-park (A spin-off Pokemon game). 
+						I really got into it when the web-hosted games started getting really popular in the early 2000's as my Mom let me use her old Windows XP computer. I loved to play things like Webkinz,
+						Poptropica, & almost any CoolMathGame... I'm not good at math so it's a good thing they dont really have any real math games on that site.
+						<br>
+						&nbsp&nbsp&nbsp&nbsp Art has had a grasp on me since I was a kid, too, because my mom always supported me drawing and painting at almost any moment of the day. As I got older I realized there's so much art 
+						behind everything, including the video games that I've known and loved. It astounds me to see games developed where they expect your jaw to drop at the beauty and intricacy of their 
+						intentionally designed world/s. I know I've had those jaw dropping experiences many times over and I think that's a good thing to live for. Those things that excite you and make you want to 
+						know or do more. Art is what I live for!
+					</p>
+				</article>
+			</div>
+			<footer>
+				<p>Copyright &copy; Autumn Thompson 2025</p>
+			</footer>
+			
+		</div>
+	</body>
+</html>

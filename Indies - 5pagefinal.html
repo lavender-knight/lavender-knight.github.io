@@ -1,0 +1,302 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title> VGAD - Video Game Art Direction</title>
+	
+	<!--font import-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Space+Grotesk:wght@300..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+	
+	<!-- style sheet -->
+	
+	<style>
+	
+		/* css reset */
+		
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			v2.0 | 20110126
+			License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+		/* font/s */
+		
+		.space-grotesk-<uniquifier> {
+		  font-family: "Space Grotesk", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;
+		}
+		
+		.tilt-neon-<uniquifier> {
+		  font-family: "Tilt Neon", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		  font-variation-settings:
+			"XROT" 0,
+			"YROT" 0;
+		}
+		.prosto-one-regular {
+		  font-family: "Prosto One", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		
+		/* actual style sheet */
+		
+		
+		p{
+			font-size: 20px;
+			font-family: Tilt Neon;
+			margin: 3% 3%;
+			color: #f6f3f6;
+			line-height: 140%;
+		}
+		h1{
+			color: #ffffff;
+			font-family: Prosto One;
+			font-size: 50px;
+		}
+		header{
+			background-color: #3A6197;
+			padding: 2%;
+		}
+		h2{
+			margin: 2%;
+			font-size: 30px;
+			font-family: Space Grotesk;
+			font-weight: 600;
+			color: #1C3557;
+		}
+		body{
+			background-color: #13112D;
+		}
+		#main-content{
+			width: 36%;
+			float: left;
+			padding: 2%;
+			background-color: #9093AA;
+			box-sizing: border-box;
+			margin: 2% 0 0 2%;
+		}
+
+		#wrapper{
+			width: 85%;
+			margin: 0 auto;
+			background-color: #B3B5C4;
+			overflow: hidden; 
+		}
+
+		#sidebar{
+			width: 58%;
+			float: left;
+			padding: 2%;
+			background-color: #9093AA;
+			box-sizing: border-box;
+			margin: 2% 2% 0 2%;
+			margin-top: 2%;
+		}
+		footer{
+			clear: left;
+		}	
+		blockquote:before{
+			vertical-align: -.35em;
+			line-height: .1em;
+			font-size: 4em;
+			content: "\201C";
+			}
+		blockquote{
+			background-color: darkgrey;
+			padding: 2%;
+			border-left: 10px solid black;
+			color: #eee;
+			font-size: 1.5em;
+			font-family: serif;
+			line-height: 1.5em;
+			margin: 4% 0 4% 6%;
+		}
+		.main-figure {
+		   width: 40%;
+		   float: left;
+		   border-left: 10px solid #3a9781;
+		   
+		}
+		.figure-2 {
+		   width: 50%;
+		   float: left;
+		   border-left: 10px solid #3a9781;
+		}
+		footer{
+			text-color: #f6f3f6;
+			font-family: Tilt Neon;
+			padding: .25%;
+			background-color: #3A6197;
+		}
+		a{
+			font-family: Tilt Neon;
+			color: #B3B5C4;
+		}
+		nav{
+			width:  100%;
+			background-color: #1C3557;
+			display: inline-block;
+			align-items: center;
+			overflow: hidden;
+			padding-left: px;
+			
+		}
+		.nav-item{
+			display: inline-block;
+			align-items:center;
+			justify-content: center;
+			font-size: 25px;
+			font-family: Space Grotesk;
+			font-weight: 600;
+			height:100%;
+			margin: -.35%;
+			padding: 15px;
+			background-color: #1C3557;
+		}
+					
+		/* nav item style */
+		
+		li.nav-item a:link{
+			text-decoration: none;
+			color: #3a9781;
+		}
+		li.nav-item a:visited{
+			color: #3a9781;
+			text-decoration: none;
+		}
+		li.nav-item a:hover{
+			color: #f6f3f6;
+			text-decoration: none;
+			background-color:#3A6197;
+		}
+		li.nav-item a:active{
+			color: #3a9781;
+			text-decoration: none;
+		}
+	</style>
+	
+	<body>
+	
+		<div id="wrapper">
+			<header> <h1>VGAD - Video Game Art Direction</h1></header>
+			
+			<nav>
+				<ul>
+					<li class="nav-item"><a href="index.html"> Home</a></li>
+					<li class="nav-item"><a href="History - 5pagefinal.html"> History</a></li>
+					<li class="nav-item"><a href="Nintendo - 5pagefinal.html"> Nintendo (EDP)</a></li>
+					<li class="nav-item"><a href="FromSoftware - 5pagefinal.html"> FromSoftware</a></li>
+				</ul>
+			</nav>
+
+			<div id="main-content">
+				
+				<article> 
+					<h2>Tunic </h2>
+					<p>
+							&nbsp&nbsp&nbsp&nbsp There are plenty of games that I could put here but this is one of my favorites so it had to be. Tunic is a top down/birds eye view game where you play as a little fox.
+							This goes in my favorite category of games which is "That was really made by just one person?" which, yes, this game was made by one person who just really loved the orginal Zelda games. 
+							The amount of art put into this game is incredible, from the warm lighting in the first area to the dark rainy segments. The details of it having it's own LANGUAGE (called runic).
+							Tunic's attention to detail always astounds me and I will be having to play it again someday.
+					</p>
+				</article>
+				
+				<article> 
+					<h2>Hades</h2>
+					<p>
+						&nbsp&nbsp&nbsp&nbsp Hades is one of the only indie games to be nominated for Game of The Year (Game Awards) and it should have won. It defined a new style and genre while the 
+						developers stuck to what they're good at (They have only made top-down rougelikes). I think it takes a fantastic thing to spark creativity of others. This is one of those games where
+						other indie developers decided to dip their toes into a genre (top down rougelikes with 2d sprites) but none come close to the story, creativity, and just-- fun of this game.
+						It takes a story of the Greek Gods and makes it into a game, idk what more to say about it, it's great.
+					</p>
+				</article>
+				<article>
+					<h2>Hollow Knight</h2>
+					<p>
+						&nbsp&nbsp&nbsp&nbsp Hollow Knight is not a genre defining game like Hades, rather, it relit a flame. Hollow Knight is a Metroid-vania and hmmm you've definitely seen those words before on the 
+						<a href="History - 5pagefinal.html"> history page </a>. Jokes aside, Metroid -- like metroid and Vania like Castlevania two games that both have similar *2D side scrolling movement and combat.
+						Hollow Knight just reminded the new generation of people who love games, how great those things can be and the beauty of simplicity with it's art-style. 
+					</p>
+					<p>
+						&nbsp&nbsp&nbsp&nbsp *2D - 2D is not nececarily true taking Metroid : Dread for example, takes 3D assets and places them to look 2D/sidescrolly
+					</p>
+				</article>
+			
+			</div>
+			<div id="sidebar">
+				<article> 
+					<h2>Screenshots</h2>
+					<figure>
+						<img src="tunic.jpg" width="100%">
+						<figcaption><p>Tunic</p></figcaption>
+					</figure>
+					<figure>
+						<img src="hades.jpg" width="100%">
+						<figcaption><p>Hades</p></figcaption>
+					</figure>
+					<figure>
+						<img src="hollow knight.jpg" width="100%">
+						<figcaption><p>Hollow Knight</p></figcaption>
+					</figure>
+				</article>
+			</div>
+			<footer>
+				<p>Copyright &copy; Autumn Thompson 2025</p>
+			</footer>
+			
+		</div>
+	</body>
+</html>
